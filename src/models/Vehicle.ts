@@ -1,4 +1,7 @@
+import dataStorage from "../data/index";
+
 export default abstract class Vehicle {
+  id: number;
   vin: string;
   width: number;
   weight: number;
@@ -14,6 +17,7 @@ export default abstract class Vehicle {
     theModel: string,
     theGovNumber: string
   ) {
+    this.id = dataStorage.createId();
     this.vin = theVin;
     this.width = theWidth;
     this.weight = theWeight;
