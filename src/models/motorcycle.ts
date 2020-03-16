@@ -1,7 +1,7 @@
-import Vehicle from "./Vehicle";
+import Vehicle from "./vehicle";
 
-export default class Truck extends Vehicle {
-  capacity: number;
+export default class Motorcycle extends Vehicle {
+  tankVolume: number;
 
   constructor(
     theVin: string,
@@ -10,7 +10,7 @@ export default class Truck extends Vehicle {
     theBrand: string,
     theModel: string,
     theGovNumber: string,
-    theCapacity: number
+    theTankVolume: number
   ) {
     super(
       theVin,
@@ -21,6 +21,6 @@ export default class Truck extends Vehicle {
       theGovNumber
     );
 
-    this.capacity = theCapacity;
+    this.tankVolume = theTankVolume;
   }
 }
