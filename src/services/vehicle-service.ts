@@ -1,9 +1,10 @@
 import Vehicle from "../models/vehicle";
+import { Data } from "./i-vehicle-service";
 import { IVehicleService } from "./i-vehicle-service";
 
-export default abstract class VehicleService<T extends Vehicle> implements IVehicleService<T> {
-  private data: T[];
-
+export default abstract class VehicleService<T extends Vehicle> extends Data<T> implements IVehicleService<T> {
+  protected data: T[];
+  
   create(entity: T): void {
     this.data.push(entity);
   }
