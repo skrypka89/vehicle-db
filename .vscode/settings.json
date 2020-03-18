@@ -1,0 +1,11 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.rendererType": "dom",
+    "eslint.alwaysShowStatus": true,
+    "editor.tabSize": 2,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.port": 3000,
+    "liveServer.settings.host": "localhost",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "debug.node.autoAttach": "on"
+}

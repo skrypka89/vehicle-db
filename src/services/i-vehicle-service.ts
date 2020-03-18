@@ -1,13 +1,9 @@
 import Vehicle from "../models/vehicle";
 
-export abstract class Data<T extends Vehicle> {
-  protected data: T[];
-}
-
-export interface IVehicleService<T extends Vehicle> extends Data<T> {
+export interface IVehicleService<T extends Vehicle> {
   create(entity: T): void;
   getAll(): T[];
-  getById(id: number): T;
+  getById(id: number): T | undefined;
   update(entity: T): void;
   delete(id: number): void;
 }

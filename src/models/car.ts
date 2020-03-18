@@ -2,20 +2,20 @@ import Vehicle from "./vehicle";
 
 export default class Car extends Vehicle {
   constructor(
-    theVin: string,
-    theWidth: number,
-    theWeight: number,
-    theBrand: string,
-    theModel: string,
-    theGovNumber: string
+    vin: string,
+    width: number,
+    weight: number,
+    brand: string,
+    model: string,
+    govNumber: string
   ) {
     super(
-      theVin,
-      theWidth,
-      theWeight,
-      theBrand,
-      theModel,
-      theGovNumber
+      vin,
+      width,
+      weight,
+      brand,
+      model,
+      govNumber
     );
   }
 }

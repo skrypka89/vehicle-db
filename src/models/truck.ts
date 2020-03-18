@@ -4,23 +4,23 @@ export default class Truck extends Vehicle {
   capacity: number;
 
   constructor(
-    theVin: string,
-    theWidth: number,
-    theWeight: number,
-    theBrand: string,
-    theModel: string,
-    theGovNumber: string,
-    theCapacity: number
+    vin: string,
+    width: number,
+    weight: number,
+    brand: string,
+    model: string,
+    govNumber: string,
+    capacity: number
   ) {
     super(
-      theVin,
-      theWidth,
-      theWeight,
-      theBrand,
-      theModel,
-      theGovNumber
+      vin,
+      width,
+      weight,
+      brand,
+      model,
+      govNumber
     );
 
-    this.capacity = theCapacity;
+    this.capacity = capacity;
   }
 }

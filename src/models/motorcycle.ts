@@ -4,23 +4,23 @@ export default class Motorcycle extends Vehicle {
   displacement: number;
 
   constructor(
-    theVin: string,
-    theWidth: number,
-    theWeight: number,
-    theBrand: string,
-    theModel: string,
-    theGovNumber: string,
-    theDisplacement: number
+    vin: string,
+    width: number,
+    weight: number,
+    brand: string,
+    model: string,
+    govNumber: string,
+    displacement: number
   ) {
     super(
-      theVin,
-      theWidth,
-      theWeight,
-      theBrand,
-      theModel,
-      theGovNumber
+      vin,
+      width,
+      weight,
+      brand,
+      model,
+      govNumber
     );
 
-    this.displacement = theDisplacement;
+    this.displacement = displacement;
   }
 }

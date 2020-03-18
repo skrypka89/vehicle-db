@@ -10,19 +10,19 @@ export default abstract class Vehicle {
   govNumber: string;
 
   constructor(
-    theVin: string,
-    theWidth: number,
-    theWeight: number,
-    theBrand: string,
-    theModel: string,
-    theGovNumber: string
+    vin: string,
+    width: number,
+    weight: number,
+    brand: string,
+    model: string,
+    govNumber: string
   ) {
     this.id = ++lastId;
-    this.vin = theVin;
-    this.width = theWidth;
-    this.weight = theWeight;
-    this.brand = theBrand;
-    this.model = theModel;
-    this.govNumber = theGovNumber;
+    this.vin = vin;
+    this.width = width;
+    this.weight = weight;
+    this.brand = brand;
+    this.model = model;
+    this.govNumber = govNumber;
   }
 }
